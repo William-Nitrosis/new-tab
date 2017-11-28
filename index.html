@@ -145,8 +145,10 @@
                 <div class="fullWidth noPad">
                     <nav class="navbar">
                         <form class="form-inline">
-                            <button class="btn btn-outline-success active" type="button" onclick="loadPage(index);">Index</button>
-                            <button class="btn btn-outline-success" onclick="loadPage(email)"; type="button">Email</button>
+                            <button class="btn btn-outline-success active" type="button" onclick="loadPage(index);">Home</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(email);" type="button">Email</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(countdown);" type="button">Countdown</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(notes);" type="button">Notes</button>
                         </form>
                     </nav>
                 </div>
@@ -163,8 +165,69 @@
                 <div class="fullWidth noPad">
                     <nav class="navbar">
                         <form class="form-inline">
-                            <button class="btn btn-outline-success" onclick="loadPage(index); type="button">Index</button>
-                            <button class="btn btn-outline-success active" onclick="loadPage(email); type="button">Email</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(index);" type="button">Home</button>
+                            <button class="btn btn-outline-success active" onclick="loadPage(email);" type="button">Email</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(countdown);" type="button">Countdown</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(notes);" type="button">Notes</button>
+                        </form>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="countdown" class="container-fluid" style="display: none">
+            <div class="row pTop noPad">
+                <div class="col-4 pHalf borderTest noPad">
+                    1
+                </div>
+                <div class="col-md-4 pHalf borderTest noPad">
+                    2
+                </div>
+                <div class="col-4 pHalf borderTest noPad">
+                    3
+                </div>
+
+                <div class="col-4 pHalf borderTest noPad">
+                    4
+                </div>
+                <div class="col-4 pHalf borderTest noPad">
+                    5
+                </div>
+                <div class="col-4 pHalf borderTest noPad">
+                    6
+                </div>
+            </div>
+
+            <div class="col-12 borderTest pBottom noPad">
+                <div class="fullWidth noPad">
+                    <nav class="navbar">
+                        <form class="form-inline">
+                            <button class="btn btn-outline-success" onclick="loadPage(index);" type="button">Home</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(email);" type="button">Email</button>
+                            <button class="btn btn-outline-success active" onclick="loadPage(countdown);" type="button">Countdown</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(notes);" type="button">Notes</button>
+                        </form>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="notes" class="container-fluid" style="display: none">
+            <div class="row pTop noPad">
+            </div>
+
+            <div class="col-12 borderTest pBottom noPad">
+                <div class="fullWidth noPad">
+                    <nav class="navbar">
+                        <form class="form-inline">
+                            <button class="btn btn-outline-success" onclick="loadPage(index);" type="button">Home</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(email);" type="button">Email</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(countdown);" type="button">Countdown</button>
+                            <button class="btn btn-outline-success active" onclick="loadPage(notes);" type="button">Notes</button>
                         </form>
                     </nav>
                 </div>
