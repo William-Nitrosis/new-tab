@@ -13,6 +13,7 @@ function startTime() {
     var s = today.getSeconds();
     m = checkTime(m);
     h = checkTime(h);
+    h = hours(h);
     s = checkTime(s);
     document.getElementById('clock').innerHTML =
         h + ":" + m ;
@@ -22,6 +23,12 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i}  // add zero in front of numbers < 10
 return i;
 }
+
+function hours(i) {
+    if (i >= 13) {i = -12 + i}  // turn to 12 hour
+    return i;
+}
+
 
 // date
 var now = new Date();
@@ -80,3 +87,16 @@ $(".qlLinks-3").hover(function () {
 
 startTime();
 
+function loadPage(page) {
+    $("#index").css("display", "none");
+    $("#email").css("display", "none");
+
+    switch(page) {
+        case index:
+            $("#index").css("display", "inherit");
+            break;
+        case email:
+            $("#email").css("display", "inherit");
+            break;
+    }
+}

@@ -26,7 +26,7 @@
         <!--[if lte IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
 
         <!-- Main body -->
-        <div class="container-fluid">
+        <div id="index" class="container-fluid" style="display: inherit">
             <div class="row pTop noPad">
 
                 <div class="col-4 borderTest noPad fullPage ">
@@ -141,8 +141,35 @@
 
 
             </div>
-            <div class="col-12 borderTest pBottom">
-                meme
+            <div class="col-12 borderTest pBottom noPad">
+                <div class="fullWidth noPad">
+                    <nav class="navbar">
+                        <form class="form-inline">
+                            <button class="btn btn-outline-success active" type="button" onclick="loadPage(index);">Index</button>
+                            <button class="btn btn-outline-success" onclick="loadPage(email)"; type="button">Email</button>
+                        </form>
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="email" class="container-fluid" style="display: none">
+            <div class="row pTop noPad">
+            </div>
+
+            <div class="col-12 borderTest pBottom noPad">
+                <div class="fullWidth noPad">
+                    <nav class="navbar">
+                        <form class="form-inline">
+                            <button class="btn btn-outline-success" onclick="loadPage(index); type="button">Index</button>
+                            <button class="btn btn-outline-success active" onclick="loadPage(email); type="button">Email</button>
+                        </form>
+                    </nav>
+                </div>
+
+
             </div>
         </div>
 
